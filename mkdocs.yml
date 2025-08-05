@@ -75,14 +75,10 @@ nav:
       - Deployment and other operations:
           - Infrastructure: operate/ops/infrastructure.md
           - Deploy: operate/ops/deploy.md
-          - Log: operate/ops/logging.md
+          - Logs: operate/ops/logging.md
           - Back up search indices: operate/ops/backup_search_indices.md
           - Redirect legacy routes: operate/ops/route_migration.md
           - Migrate from another repository: "operate/ops/migrate.md"
-          - Jobs/Automated Tasks:
-              - Jobs: operate/ops/jobs/jobs.md
-              - Configure: operate/ops/jobs/configure.md
-              - Create and run: operate/ops/jobs/create_and_run.md
       - Customization philosophy: operate/customize/index.md
       - Customize look-and-feel:
           - Overview: "operate/customize/look-and-feel/index.md"
@@ -129,15 +125,15 @@ nav:
               - Local storage: "operate/customize/file-uploads/local.md"
               - S3 compatible storage: "operate/customize/file-uploads/s3.md"
               - Upload limits: "operate/customize/file-uploads/upload_limits.md"
-          - Jobs: "operate/customize/jobs.md"
+          - Jobs/Automated tasks: "operate/customize/jobs.md"
           - Landing page: "operate/customize/landing_page.md"
           - Language(s) and locale(s): "operate/customize/i18n-and-l10n.md"
           - Notifications:
               - Overview: "operate/customize/notifications.md"
               - Modify notifications: operate/customize/notifications_modify.md
           - Require a community to publish: "operate/customize/require_community.md"
-          - Restrict community creation: "operate/customize/restrict_community_creation.md"
           - Restrict access to pages: operate/customize/restrict_access.md
+          - Restrict community creation: "operate/customize/restrict_community_creation.md"
           - Search:
               - Change facets/sorting: "operate/customize/search.md"
               - Create search terms mappings: operate/customize/search_terms_migration.md
@@ -189,23 +185,23 @@ nav:
           - Notifications: maintenance/architecture/notifications.md
           - Recommended reading: maintenance/architecture/reading.md
       - Lower-level internals:
+          - Administration panel: maintenance/internals/administration_panel.md
+          - Administration views: maintenance/internals/administration_reference.md
+          - Audit logs: maintenance/internals/audit-logs.md
           - Building resources: maintenance/internals/resource.md
           - Building services: maintenance/internals/service.md
           - Building serializers: maintenance/internals/serializers.md
-          - Sanitize input data: maintenance/internals/validation.md
-          - Grouping atomic operations: maintenance/internals/uow.md
-          - Theming: maintenance/internals/theming.md
-          - Search: maintenance/internals/search.md
-          - Usage statistics: maintenance/internals/statistics.md
-          - Optimistic concurrency control: maintenance/internals/concurrency-control.md
-          - Database transaction management: maintenance/internals/transactions.md
           - Create a database migration: maintenance/internals/alembic.md
-          - Administration panel: maintenance/internals/administration_panel.md
-          - Administration views: maintenance/internals/administration_reference.md
-          - Notifications: maintenance/internals/notifications.md
-          - Audit logs: maintenance/internals/audit-logs.md
+          - Database transaction management: maintenance/internals/transactions.md
+          - Grouping atomic operations: maintenance/internals/uow.md
           - Job system: maintenance/internals/jobs.md
+          - Notifications: maintenance/internals/notifications.md
+          - Optimistic concurrency control: maintenance/internals/concurrency-control.md
+          - Sanitize input data: maintenance/internals/validation.md
+          - Search: maintenance/internals/search.md
           - System Fields: maintenance/internals/systemfield.md
+          - Theming: maintenance/internals/theming.md
+          - Usage statistics: maintenance/internals/statistics.md
       - Operational tasks:
           - Release management: maintenance/operations/release-management.md
           - Branch management: maintenance/operations/branch-management.md
@@ -269,7 +265,6 @@ nav:
           - Invenio-cli commands: reference/cli.md
           - Invenio commands: reference/cli_invenio.md
       - Metadata: reference/metadata.md
-      - Checks config schema: reference/checks_config.md
       - OAI-PMH: reference/oai_pmh.md
       - REST API:
           - Overview: "reference/rest_api_index.md"

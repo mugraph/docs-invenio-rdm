@@ -107,6 +107,21 @@ Install InvenioRDM v12:
 invenio-cli install
 ```
 
+### Activate the virtual environment
+
+Before running any `invenio` commands, activate your virtual environment shell:
+
+```bash
+$ invenio-cli shell
+Launching subshell in virtual environment...
+source <path to virtualenvs>/bin/activate
+```
+
+This step ensures that all subsequent commands use the correct Python environment and installed dependencies.
+
+!!! note
+    If you are upgrading in an environment that does not use a Python virtualenv, you can skip this step.
+
 ### Database migration
 
 Execute the database migration:
@@ -172,10 +187,11 @@ invenio domains create spammer
 
 ### New configuration variables
 
-```bash
-COMMUNITIES_IDENTITIES_CACHE_REDIS_URL = "URI_TO_REDIS"
-USERS_RESOURCES_ADMINISTRATION_ENABLED = True
-THEME_SITENAME = "Project name for header and UI"
+These are the new configuration variables introduced in this release. Add them to your `invenio.cfg` as needed:
+
+```python
+COMMUNITIES_IDENTITIES_CACHE_REDIS_URL = "URI_TO_REDIS"  # Redis URL for caching community identities
+USERS_RESOURCES_ADMINISTRATION_ENABLED = True            # Enables the users administration panel
 ```
 
 ## Big Changes
